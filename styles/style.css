@@ -17,6 +17,10 @@ font-family: 'Syncopate', sans-serif; */
     margin: 0;
 }
 
+body {
+    height: 100vh;
+}
+
 /*----Mobile first----*/
 
 html {
@@ -68,6 +72,16 @@ h5 {
     color: var(--header-color);
 }
 
+p {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: justify;
+    color: var(--primary-color);
+}
+
 blockquote {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 12px;
@@ -81,7 +95,7 @@ blockquote {
 
 .wrapper {
     max-width: 64rem;
-    height: 100vh;
+    min-height: 100%;
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 100%;
@@ -348,9 +362,55 @@ blockquote {
     color: var(--header-color);
 }
 
+/*----Facilities----*/
+.facilities {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.facilities__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facilities__desc button {
+    align-self: flex-end;
+}
+
+.facilities__img {
+    width: 300px;
+    height: 200px;
+    align-self: center;
+
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+/*components
+home
+facilities 
+booking*/
 
 /*Carousel desktop
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 0.8rem;*/
+
+
+    /*facilities. img
+        /* width: 525px;
+    height: 267px; */
+
+    /* facilities desc 
+    width: 60%; */
+
+    /*facilities: flex-direction row*/
