@@ -256,13 +256,13 @@ blockquote {
     padding: 0.5rem;
 }
 
-.about__read-more {
+.read-more {
     align-self: flex-end;
     display: flex;
     align-items: center;
 }
 
-.about__read-more a {
+.read-more a {
     color: inherit;
     text-decoration: none;
 }
@@ -294,7 +294,7 @@ blockquote {
     background-image: url("../images/facilities.jpeg");
 }
 
-.card--large--rooms, .card--small--rooms {
+.card--large--raft, .card--medium--raft, .card--small--raft {
     background-image: url("../images/the-raft.jpg");
 }
 
@@ -317,6 +317,10 @@ blockquote {
 
 .card--medium--boutiques {
     background-image: url("../images/boutique.jpeg");
+}
+
+.card--medium--lodge {
+    background-image: url("../images/the-lodge.jpeg");
 }
 
 .card--small {
@@ -410,14 +414,14 @@ blockquote {
     align-self: flex-end;
 }
 
-.facilities__img {
+/* .facilities__img {
     width: 300px;
     height: 200px;
     align-self: center;
 
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-}
+} */
 
 /*----Rooms section----*/
 .rooms-section {
@@ -478,6 +482,56 @@ blockquote {
 .btn--search i {
     margin-right: 1rem;
 }
+
+/*----Recommended section----*/
+.header-line {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid var(--primary-color); 
+    line-height: 0.08rem;
+    margin: 30px 0 30px; 
+}
+
+.header-line span {
+    background-color: #474853;
+    padding:15px; 
+}
+
+
+.recommended__rooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.recommended:nth-child(2){
+    border-bottom: 1px solid var(--primary-color); /*Tar fel??*/
+}
+
+.recommended__rooms figure {
+    order: 2;
+}
+
+.recommended__rooms__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommended__rooms__desc .read-more {
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.recommended__rooms__desc button {
+    align-self: flex-end;
+}
+
 
 
 
