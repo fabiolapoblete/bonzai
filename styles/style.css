@@ -158,6 +158,10 @@ blockquote {
     background-image: url("../images/facilities.jpeg");
 }
 
+.hero--booking {
+    background-image: url("../images/booking.png");
+}
+
 /*----Logo----*/
 .hero__logo-container {
     align-self: flex-end;
@@ -424,6 +428,57 @@ blockquote {
     gap: 1.5rem;
     padding: 2rem;
 }
+
+/*BOOKING*/
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.booking-form__fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+.booking-form input {
+    width: 250px;
+    height: 30px; 
+    background-color: #A38471;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    padding: 1rem;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.btn--search {
+    width: 250px;
+    height: 30px;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+.btn--search i {
+    margin-right: 1rem;
+}
+
 
 
 
