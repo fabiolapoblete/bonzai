@@ -139,6 +139,10 @@ blockquote {
     background-image: url("../images/home.png");
 }
 
+.hero--facilities {
+    background-image: url("../images/facilities.jpeg");
+}
+
 /*----Logo----*/
 .hero__logo-container {
     align-self: flex-end;
@@ -203,6 +207,10 @@ blockquote {
 
 .heading--home {
     color: var(--action-color);
+}
+
+.heading--facilities, .heading--booking {
+    color: var(--header-color);
 }
 
 /*----MAIN----*/
