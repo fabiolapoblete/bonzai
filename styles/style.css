@@ -42,6 +42,15 @@ h2 {
     color: var(--header-color);
 }
 
+h3 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: var(--action-color);
+}
+
 h4 {
     font-family: 'Syncopate', sans-serif;
     font-size: 14px;
@@ -49,7 +58,14 @@ h4 {
     line-height: 2.5rem;
     text-transform: uppercase;
     color: var(--primary-color);
+}
 
+h5 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--header-color);
 }
 
 blockquote {
@@ -60,19 +76,20 @@ blockquote {
     text-align: center;
     text-transform: uppercase;
     color: var(--primary-color);
-    margin: 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .wrapper {
     max-width: 64rem;
+    height: 100vh;
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: 
     "hero"
-    "main";
-    /* "footer"; */
+    "main"
+    "footer";
     margin: 0 auto;
 }
 
@@ -281,6 +298,46 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*----FOOTER----*/
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.footer__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    border-top: 1px solid var(--primary-color);
+    padding-top: 2.5rem;
+}
+
+.footer__nav {
+    display: none;
+}
+
+.footer__nav__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 2rem 0;
+}
+
+.footer__nav__list a {
+    font-family: 'Syncopate';
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 15px;
+    text-decoration: none;
+    color: var(--header-color);
 }
 
 
