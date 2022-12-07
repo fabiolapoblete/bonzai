@@ -290,8 +290,29 @@ blockquote {
     background-image: url("../images/facilities.jpeg");
 }
 
-.card--large--rooms {
+.card--large--rooms, .card--small--rooms {
     background-image: url("../images/the-raft.jpg");
+}
+
+.card--medium {
+    width: 300px;
+    height: 200px;
+}
+
+.card--medium--bar {
+    background-image: url("../images/restaurant.jpeg"); /*byt till bar*/
+}
+
+.card--medium--theater {
+    background-image: url("../images/theater.jpeg");
+}
+
+.card--medium--health {
+    background-image: url("../images/spa.webp");
+}
+
+.card--medium--boutiques {
+    background-image: url("../images/boutique.jpeg");
 }
 
 .card--small {
@@ -299,15 +320,11 @@ blockquote {
     min-height: 100px;
 }
 
-.card--small--rooms {
-    background-image: url("../images/the-raft.jpg");
-}
-
-.card--small--restaurant {
+.card--small--restaurant, .card--medium--restaurant {
     background-image: url("../images/restaurant.jpeg"); 
 }
 
-.card--small--spa {
+.card--small--spa, .card--medium--spa {
     background-image: url("../images/spa.webp"); 
 }
 
@@ -371,6 +388,8 @@ blockquote {
 .facilities {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2rem 1rem;
     gap: 2rem;
     border-bottom: 1px solid var(--primary-color);
