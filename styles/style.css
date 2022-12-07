@@ -105,6 +105,7 @@ blockquote {
     "main"
     "footer";
     margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 /*----BUTTONS----*/
@@ -289,6 +290,10 @@ blockquote {
     background-image: url("../images/facilities.jpeg");
 }
 
+.card--large--rooms {
+    background-image: url("../images/the-raft.jpg");
+}
+
 .card--small {
     min-width: 200px; /*sätta andra värden?*/
     min-height: 100px;
@@ -389,6 +394,16 @@ blockquote {
 
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+/*----Rooms section----*/
+.rooms-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
 }
 
 
