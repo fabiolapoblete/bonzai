@@ -416,7 +416,6 @@ blockquote {
     align-items: center;
 }
 
-
 /*----FACILITIES----*/
 
 /*----facilities-secion----*/
@@ -545,7 +544,6 @@ blockquote {
     align-self: flex-end;
 }
 
-
 /*----DESKTOP STYLING----*/
 @media screen and (min-width: 880px) {
     html {
@@ -641,6 +639,7 @@ blockquote {
     }
 
     /*----BOOKING----*/
+    
     .booking-form {
         justify-content: center;
     }
