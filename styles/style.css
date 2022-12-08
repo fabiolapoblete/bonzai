@@ -263,7 +263,11 @@ blockquote {
 
 .card--medium {
     width: 300px;
-    min-height: 15vh;
+    min-height: 20vh; /*tidigare 15*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card--small {
@@ -284,7 +288,7 @@ blockquote {
 }
 
 .card--medium--bar {
-    background-image: url("../images/restaurant.jpeg"); /*byt till bar*/
+    background-image: url("../images/bars.png"); /*byt till bar*/
 }
 
 .card--medium--theater {
@@ -292,7 +296,7 @@ blockquote {
 }
 
 .card--medium--health {
-    background-image: url("../images/spa.webp");
+    background-image: url("../images/health-club.png");
 }
 
 .card--medium--boutiques {
@@ -309,6 +313,11 @@ blockquote {
 
 .card--medium--spa, .card--small--spa {
     background-image: url("../images/spa.webp"); 
+}
+
+.card--medium .material-symbols-outlined {
+    color: var(--primary-color);
+    font-size: 35px;
 }
 
 /*----buttons----*/
@@ -337,6 +346,26 @@ blockquote {
     color: inherit;
 }
 
+/*----back----*/
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.back a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----break-line----*/
+.break{
+    background-color: var(--primary-color);
+    border: none;
+    height: 1px;
+}
 
 /*----HOME----*/
 
@@ -488,19 +517,11 @@ blockquote {
 
 .recommended__rooms {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem;
     gap: 2rem;
-}
-
-.recommended:nth-child(2){
-    border-bottom: 1px solid var(--primary-color); /*Tar fel??*/
-}
-
-.recommended__rooms figure {
-    order: 2; /*FUNKAR INTE??*/
 }
 
 .recommended__rooms__desc {
@@ -519,6 +540,7 @@ blockquote {
 .recommended__rooms__desc button {
     align-self: flex-end;
 }
+
 
 /*----DESKTOP STYLING----*/
 @media screen and (min-width: 880px) {
@@ -587,7 +609,7 @@ blockquote {
     }
 
     .card--medium {
-        min-height: 15vh;
+        min-height: 20vh; /*tidigare 15 eller 25*/
         min-width: 45%;
     }
 
@@ -606,22 +628,31 @@ blockquote {
         gap: 6rem;
     }
 
+    .facilities:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
     .facilities__desc .card--medium--bar { /*varför funkar det inte?*/
         order: 2;
     }
 
     /*----BOOKING----*/
-    .recommended__rooms figure {
-        order: 1; /*funkar inte??*/
+    .booking-form {
+        justify-content: center;
     }
 
     .recommended__rooms {
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .recommended__rooms__desc .read-more {
         border-bottom: 1px solid var(--primary-color);
         margin-bottom: 2rem;
         padding-bottom: 0.5rem;
+    }
+
+    .break--rooms {
+        display: none;
     }
 }
