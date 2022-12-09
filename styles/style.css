@@ -353,7 +353,7 @@ blockquote {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    font-family: 'Josefin Sans', sans-serif; /*bryt ut*/
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.3rem;
@@ -371,7 +371,7 @@ blockquote {
 
 /*----about----*/
 .about {
-    font-family: 'Josefin Sans', sans-serif; /*bryt ut*/
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.3rem;
