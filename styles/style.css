@@ -3,6 +3,7 @@
 :root {
     --primary-color: #AAA0A0;
     --secondary-color: #474853;
+    --secondary-color-03: #4748534d;
     --action-color: #7AB0B0;
     --header-color: #C7C3C3;
     --btn-color: #A38471;
@@ -29,6 +30,10 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
+h3, h4, p {
+    font-size: 0.9rem;
+}
+
 h1 {
     font-size: 1.3rem;  
     line-height: 2.5rem;
@@ -43,12 +48,10 @@ h2 {
 }
 
 h3 {
-    font-size: 0.9rem;
     color: var(--action-color);
 }
 
 h4 {
-    font-size: 0.9rem;
     line-height: 2.5rem;
     color: var(--primary-color);
 }
@@ -61,7 +64,6 @@ h5 {
 
 p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 0.9rem;
     font-weight: 600;
     line-height: 1.5rem;
     text-align: justify;
@@ -96,7 +98,6 @@ blockquote {
 /*----COMPONENTS----*/
 
 /*----hero----*/
-
 .hero {
     min-height: 30vh;
     grid-area: hero;
@@ -131,8 +132,8 @@ blockquote {
 }
 
 .hero__logo-container__logo {
-    width: 100px;
-    height: 80px;
+    width: 6.3rem;
+    height: 5rem;
 }
 
 /*----hero nav-bar----*/
@@ -157,7 +158,7 @@ blockquote {
 }
 
 .hero__nav-bar__menu-list {
-    background-color: var(--header-color); /*BYT!!*/
+    background-color: var(--header-color);
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -165,9 +166,9 @@ blockquote {
 }
 
 .hero__nav-bar__menu-list a {
-    font-family: 'Syncopate', sans-serif; /*Kan man flytta ut?? samma som i footer?*/
-    font-weight: 700; /*Kan man flytta ut??*/
+    font-family: 'Syncopate', sans-serif;
     color: inherit;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -235,9 +236,9 @@ blockquote {
 
 .footer__nav__list a {
     font-family: 'Syncopate';
-    font-size: 9px;
+    font-size: 0.6rem;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 0.9rem;
     text-decoration: none;
     color: var(--header-color);
 }
@@ -262,8 +263,8 @@ blockquote {
 }
 
 .card--medium {
-    width: 300px;
-    min-height: 20vh; /*tidigare 15*/
+    width: 18.8rem;
+    min-height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -271,8 +272,8 @@ blockquote {
 }
 
 .card--small {
-    min-width: 200px; /*sätta andra värden?*/
-    min-height: 100px;
+    min-width: 12.5rem; /*fixed width and height, because ratio will remain the same*/
+    min-height: 6.3rem;
 }
 
 .card--large--space-resort {
@@ -288,7 +289,7 @@ blockquote {
 }
 
 .card--medium--bar {
-    background-image: url("../images/bars.png"); /*byt till bar*/
+    background-image: url("../images/bars.png");
 }
 
 .card--medium--theater {
@@ -317,7 +318,7 @@ blockquote {
 
 .card--medium .material-symbols-outlined {
     color: var(--primary-color);
-    font-size: 35px;
+    font-size: 2.2rem;
 }
 
 /*----buttons----*/
@@ -341,27 +342,22 @@ blockquote {
     background-color: var(--action-color);
 }
 
-.btn a {
+/*----back----*/
+.btn a, .back a {
     text-decoration: none;
     color: inherit;
 }
 
-/*----back----*/
 .back {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
     margin-bottom: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif; /*bryt ut*/
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.3rem;
-}
-
-.back a {
-    text-decoration: none;
-    color: inherit;
+    color: var(--primary-color);
 }
 
 /*----break-line----*/
@@ -371,11 +367,11 @@ blockquote {
     height: 1px;
 }
 
-/*----HOME----*/
+/*----HOME PAGE----*/
 
 /*----about----*/
 .about {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif; /*bryt ut*/
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.3rem;
@@ -416,7 +412,7 @@ blockquote {
     align-items: center;
 }
 
-/*----FACILITIES----*/
+/*----FACILITIES PAGE----*/
 
 /*----facilities-secion----*/
 .facilities {
@@ -451,7 +447,7 @@ blockquote {
     padding: 2rem;
 }
 
-/*----BOOKING----*/
+/*----BOOKING PAGE----*/
 
 /*----form-section----*/
 .booking-form {
@@ -468,7 +464,7 @@ blockquote {
 
 .booking-form label {
     font-family: 'Syncopate', sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -477,8 +473,8 @@ blockquote {
 }
 
 .booking-form input {
-    width: 300px;
-    height: 30px; 
+    width: 18.8rem;
+    height: 1.9rem; 
     background-color: #A38471;
     border: none;
     border-top-left-radius: 20px;
@@ -486,15 +482,15 @@ blockquote {
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     padding: 1rem;
     font-family: 'Syncopate', sans-serif;
-    font-size: 10px;
+    font-size: 0.6rem;
     font-weight: 700;
     color: var(--secondary-color);
 }
 
 .btn--search {
-    width: 250px;
-    height: 30px;
-    font-size: 12px;
+    width: 15.6rem;
+    height: 1.9rem;
+    font-size: 0.75rem;
     align-self: flex-end;
     margin-top: 1rem;
     cursor: pointer;
@@ -510,12 +506,12 @@ blockquote {
     text-align: center; 
     border-bottom: 1px solid var(--primary-color); 
     line-height: 0.08rem;
-    margin: 30px 0 30px; 
+    margin: 1.9rem 0 1.9rem; 
 }
 
 .header-line span {
     background-color: #474853;
-    padding:15px; 
+    padding: 0.9rem; 
 }
 
 .recommended__rooms {
@@ -536,8 +532,8 @@ blockquote {
 
 .recommended__rooms__desc .read-more {
     margin-top: 2rem;
-    color: var(--primary-color);
     font-weight: 600;
+    color: var(--primary-color);
 }
 
 .recommended__rooms__desc button {
@@ -547,7 +543,7 @@ blockquote {
 /*----DESKTOP STYLING----*/
 @media screen and (min-width: 880px) {
     html {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     /*----HERO----*/
@@ -558,20 +554,20 @@ blockquote {
 
     .hero__logo-container {
         width: 100%;
-        background-color: rgba(71, 72, 83, 0.3);
+        background-color: var(--secondary-color-03);
         text-align: center;
         position: unset; 
     }
 
     .hero__logo-container__logo {
-        width: 157px;
-        height: 80px; 
+        width: 9.8rem;
+        height: 5rem; 
     }
     
     .hero__nav-bar {
         width: 100%;
         position: unset;
-        background: rgba(71, 72, 83, 0.3);
+        background: var(--secondary-color-03);
     }
 
     .hero__nav-bar__toggle {
@@ -611,11 +607,11 @@ blockquote {
     }
 
     .card--medium {
-        min-height: 20vh; /*tidigare 15 eller 25*/
+        min-height: 20vh;
         min-width: 45%;
     }
 
-    /*----HOME----*/
+    /*----HOME PAGE----*/
     .carousel {
         display: flex;
         justify-content: space-evenly;
@@ -623,8 +619,7 @@ blockquote {
         gap: 0.8rem;
     }
 
-    /*----FACILITIES----*/
-
+    /*----FACILITIES PAGE----*/
     .facilities {
         flex-direction: row;
         gap: 6rem;
@@ -634,12 +629,7 @@ blockquote {
         flex-direction: row-reverse;
     }
 
-    .facilities__desc .card--medium--bar { /*varför funkar det inte?*/
-        order: 2;
-    }
-
-    /*----BOOKING----*/
-    
+    /*----BOOKING PAGE----*/
     .booking-form {
         justify-content: center;
     }
