@@ -1,5 +1,9 @@
 # Bonzai individual assignment
 
+Figma-skisser:
+Desktop - https://www.figma.com/file/YxdFFF7KTQ23xY8eVbm1Z0/BONZAI?node-id=0%3A1&t=WyCEtZpZLEbbo7HT-0
+Mobil - https://www.figma.com/file/kZREWPrhyVKL6rgEjY5bML/BONZAI-MOBILE?node-id=0%3A1&t=cXhO07zeYiF86q5O-0
+
 ## Bakgrund
 
 Ni skapa en webbplats åt det hotellet Bonz.ai som erbjuder en AI-driven eko vistelse. Det första steget var att designa sidan i Figma som ni redan gjort och nu kommer vi till nästa fas som är implementation. Ni ska alltså utgå från er grupps designskiss ni designade i förra kursen (UX / UI grunder) och bygga denna i HTML / CSS men individuellt.
