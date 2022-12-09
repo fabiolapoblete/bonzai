@@ -1,6 +1,7 @@
 # Bonzai individual assignment
 
 Figma-skisser:
+
 Desktop - https://www.figma.com/file/YxdFFF7KTQ23xY8eVbm1Z0/BONZAI?node-id=0%3A1&t=WyCEtZpZLEbbo7HT-0
 
 Mobil - https://www.figma.com/file/kZREWPrhyVKL6rgEjY5bML/BONZAI-MOBILE?node-id=0%3A1&t=cXhO07zeYiF86q5O-0
